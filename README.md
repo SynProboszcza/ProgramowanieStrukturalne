@@ -1,1 +1,1 @@
-#Prace domowe z ćwiczeń z przedmiotu Programowanie Strukturalne
+# Prace domowe z ćwiczeń z przedmiotu Programowanie Strukturalne
