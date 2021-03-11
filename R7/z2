@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char input;
+    char lista_znakow[100];
+    int i = 0;
+    while(input!='#'){
+        scanf("%c", &input);
+        lista_znakow[i] = input;
+        i++;
+        }
+    printf("Razem ze znakami nowej lini, wprowadziles tyle znakow: %d\n", i+1);
+    i = 0;
+    while(lista_znakow[i]!='\0'){
+        if(lista_znakow[i]=='\n'){
+            i++;
+        }
+        printf("%c:%d\n", lista_znakow[i], lista_znakow[i]);
+        i++;
+    }
+
+    return 0;
+}
