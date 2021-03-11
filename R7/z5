@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int liczba=1;
+    int liczba_parzystych = 0;
+    int suma_parzystych = 0;
+    int liczba_nieparzystych = 0;
+    int suma_nieparzystych = 0;
+    while(liczba!=0){
+        scanf("%d", &liczba);
+        switch(liczba){
+        case liczba%2==0 && liczba!=0:
+            liczba_parzystych++;
+            suma_parzystych += liczba;
+            break;
+        default:
+            liczba_nieparzystych++;
+            suma_nieparzystych +=liczba;
+        }
+    }
+    float srednia_p = suma_parzystych/liczba_parzystych;
+    float srednia_n = suma_nieparzystych/liczba_nieparzystych;
+    printf("Liczba parzystych:%d\n", liczba_parzystych);
+    printf("Liczba nieparzystych:%d\n", liczba_nieparzystych);
+    printf("Srednia parzystych:%f\n", srednia_p);
+    printf("Srednia nieparzystych:%f\n", srednia_n);
+    return 0;
+}
