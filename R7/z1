@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char input;
+    int i = 0;
+    while(input!='#'){
+        input = getchar();
+        i++;
+        }
+    printf("Razem ze znakami nowej lini, wprowadziles tyle znakow: %d", i+1);
+    return 0;
+}
