@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+float min(double x, double y);
+
+int main()
+{
+    printf("Hello world!\n");
+    printf("%f", min(17,5));
+    return 0;
+}
+
+
+float min(double x, double y){
+    if(x<y){
+        return x;
+    }
+    else if(y<x){
+        return y;
+    }
+    else{
+        return x;
+    }
+}
