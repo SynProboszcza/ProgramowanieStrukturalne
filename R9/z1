@@ -6,7 +6,6 @@ float min(double x, double y);
 
 int main()
 {
-    printf("Hello world!\n");
     printf("%f", min(17,5));
     return 0;
 }
