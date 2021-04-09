@@ -35,7 +35,8 @@ int main()
     else {
     	printf("Istnieje dwa rozwiazania\n");
     	pierwiastekdelta = sqrt(delta);
-	    x1 = -1*b-pierwiastekdelta;
+	x1 = -1*b-pierwiastekdelta/2*a;
+        x2 = -1*b+pierwiastekdelta/2*a;
 	    printf("x1:%f\n",x1);
 	    printf("x2:%f\n",x2);
 	    //printf("pier%f\n",sqrt(4.0));
